@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "review-summarization-agent"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["foundry-review-core"]
+
+[project.scripts]
+review-summarization-agent = "review_summarization_agent:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/review_summarization_agent"]

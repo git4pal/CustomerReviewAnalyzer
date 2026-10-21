@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "human-approval-agent"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["foundry-review-core"]
+
+[project.scripts]
+human-approval-agent = "human_approval_agent:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/human_approval_agent"]

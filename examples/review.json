@@ -1,0 +1,11 @@
+{
+  "reviewId": "RVW-12345",
+  "productId": "PRD-5001",
+  "reviewText": "The product arrived leaking and caused skin irritation. Customer service was difficult to reach.",
+  "productMetadata": {
+    "name": "Example moisturizer",
+    "category": "Skin care"
+  },
+  "customerMetadata": {},
+  "isVip": false
+}

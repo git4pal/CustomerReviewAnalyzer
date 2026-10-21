@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "personalized-response-agent"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["foundry-review-core"]
+
+[project.scripts]
+personalized-response-agent = "personalized_response_agent:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/personalized_response_agent"]

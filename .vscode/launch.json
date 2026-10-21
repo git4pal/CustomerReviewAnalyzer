@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Register Foundry Agents",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/manage_agents.py",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "args": ["register"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Process Review Through Six Foundry Agents",
+      "type": "debugpy",
+      "request": "launch",
+      "code": "from review_orchestrator_agent import main; main()",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "args": ["process", "--input", "${workspaceFolder}/examples/review.json"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
